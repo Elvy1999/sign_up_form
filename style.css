@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Moleth";
+  src: url(fonts/Moleth-Demo.ttf);
+}
+
+body,
+.page_container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Moleth";
+}
+
+.page_container {
+  display: flex;
+}
+
+.left_container {
+  background-image: url("assets/pixelated-gif.gif");
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.right_container {
+  background-color: #060606;
+  flex-grow: 1;
+  border: 1px dashed black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.sign_up_form {
+  border: 2px solid rgb(230, 227, 227);
+  font-size: 25px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+#first_name,
+#last_name,
+#user_email,
+#user_password,
+#confirm_password {
+  border-radius: 15px;
+  background-color: rgb(186, 171, 171);
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-family: "Moleth";
+  height: 30px;
+  font-size: 24px;
+}
+
+.submit_btn {
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 5px;
+  background-color: rgb(61, 141, 61);
+}
+
+.submit_btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+h1:hover,
+h2:hover {
+  color: yellow;
+}
+
+#myAudio {
+  display: none;
+}
